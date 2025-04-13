@@ -16,18 +16,26 @@
     <div class="header">
         <!-- Navbar inside header -->
         <div class="nav">
-          <div><img src="https://cdn.prod.website-files.com/6170700f1a1db6b3a0ac16ed/617938cf6b1c7ac24443ab5a_Jadoo-travel-logo.svg" alt=""></div>
-          <div>
-            <a href="#">Destinations</a>
-            <a href="#">Hotels</a>
-            <a href="#">Flights</a>
-            <a href="#">Bookings</a>
-            <a href="#">Logins</a>
-            <a href="#"  class="nav-button">Sign up</a>
-            <a href="#">EN</a>
+            <div class="logo">
+              <img src="https://cdn.prod.website-files.com/6170700f1a1db6b3a0ac16ed/617938cf6b1c7ac24443ab5a_Jadoo-travel-logo.svg" alt="">
+            </div>
+          
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+              ☰
+            </div>
+          
+            <!-- Nav Links -->
+            <div class="nav-links" id="navLinks">
+              <a href="#">Destinations</a>
+              <a href="#">Hotels</a>
+              <a href="#">Flights</a>
+              <a href="#">Bookings</a>
+              <a href="#">Logins</a>
+              <a href="#" class="nav-button">Sign up</a>
+              <a href="#">EN</a>
+            </div>
           </div>
-        </div>
-    
         <!-- Header Content -->
         <div class="content">
           <div class="left">
@@ -264,6 +272,14 @@
   </footer>
   
   
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
   
   
   </body>
